@@ -12,4 +12,14 @@
             <center><h1>SIMPLE LAPOR!</h1></center>
 			</hgroup>
 			<div class="clear"></div>
-		</header>
+			<div class= "box">
+			<div class "cari">
+				<from method="post" action="">
+					<input id="cari" type="text" name="cari"> <button type 'submit' class='tabcari'>cari</button>
+				</from>
+				</div>
+			</div>
+	</div>
+</body>
+</html>
+</header>
