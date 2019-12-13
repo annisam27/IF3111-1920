@@ -19,6 +19,7 @@
                     
                     <div class="form-group">
                     <select name="Aspek">
+                        <option style="display:none" value= 'pilih'> Pilih Aspek Pelaporan/Komentar</option>
                         <option value='Infrastruktur'>Infrastrktur</option>
                         <option value='Kesehatan'>Kesehatan</option>
                         <option value='Kriminal'>Kriminal</option>
