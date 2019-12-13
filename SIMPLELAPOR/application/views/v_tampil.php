@@ -8,7 +8,7 @@
 	<center>
 		<h1>Daftar Laporan</h1>
 	</center>
-	<center><?php echo anchor('crud/tambah_aksi', 'Buat Laporan'); ?></center>
+	<center><?php echo anchor('crud/tambah', 'Buat Laporan'); ?></center>
 	<table style="margin:20px auto;" border="1">
 
 
