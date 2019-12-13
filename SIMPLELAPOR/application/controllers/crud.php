@@ -11,12 +11,14 @@ class Crud extends CI_Controller{
 	}
 
 	function index(){
-		$data['laporan'] = $this->m_data->tampil_data()->result();
+		//$data['laporan'] = $this->m_data->tampil_data()->result();
 		$this->load->view('v_tampil',$data);
 	}
 
 	function tambah(){
+		$this->load->view('v_header');
 		$this->load->view('depan');
+		$this->load->view('v_footer');
 	}
 
 	function tambah_aksi(){
@@ -30,7 +32,13 @@ class Crud extends CI_Controller{
 			'Lampiran' => $Lampiran
 			);
 		$this->m_data->input_data($data,'laporan');
-		redirect('crud/index');
+		redirect('web/index');
+	} 
+
+	function hapus($id_laporan){
+		$where = array('id' => $id_laporan);
+		$this->m_data->hapus_data($where,'laporan');
+		redirect('web/index');
 	}
 
 }
