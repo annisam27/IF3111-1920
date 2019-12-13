@@ -39,4 +39,24 @@ class Crud extends CI_Controller{
 		redirect('crud/index');
 	}
 
+	function update(){
+		$id_laporan = $this->input->post('id');
+		$Laporan_Komentar = $this->input->post('Laporan_Komentar');
+		$Aspek = $this->input->post('Aspek');
+		$Lampiran = $this->input->post('Lampiran')
+	 
+		$data = array(
+			'Laporan_Komentar' => $Laporan_Komentar,
+			'Aspek' => $Aspek,
+			'Lampiran' => $Lampiran
+		);
+	 
+		$where = array(
+			'id' => $id_laporan
+		);
+	 
+		$this->m_data->update_data($where,$data,'laporan');
+		redirect('crud/index');
+	}
+
 }
