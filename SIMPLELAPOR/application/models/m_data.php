@@ -1,5 +1,6 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 class M_data extends CI_Model
 {
     public function tampil_data()
@@ -31,6 +32,9 @@ class M_data extends CI_Model
     }
 =======
 
+=======
+
+>>>>>>> 31fa7b1bd383f1b093f50e3a825187d22d835ecb
 class M_data extends CI_Model
 {
 	public function tampil_data()
@@ -70,5 +74,8 @@ class M_data extends CI_Model
 		$this->db->where($where);
 		$this->db->update($table, $data);
 	}
+<<<<<<< HEAD
+>>>>>>> 31fa7b1bd383f1b093f50e3a825187d22d835ecb
+=======
 >>>>>>> 31fa7b1bd383f1b093f50e3a825187d22d835ecb
 }
