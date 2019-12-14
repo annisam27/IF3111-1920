@@ -58,3 +58,30 @@ footer a{
 section{
 	padding: 20px;
 }
+
+.box {
+	background-color: transparent;
+	width: 65%;
+	margin: auto;
+	position: relative;
+	align-self: center;
+}
+
+.tabcari {
+	background-color: #fff;
+	position: relative;
+	padding: 10px;
+	border: solid 1px #232323;
+	color: #232323;
+	text-decoration: none;
+	border-radius: 2px;
+	font: 400px;
+}
+
+.upload {
+	position: relative;
+	color: #232323;
+	text-decoration: none;
+	font-weight: none;
+	left: 34px;
+}
