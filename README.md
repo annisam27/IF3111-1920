@@ -96,7 +96,24 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+instalasi framework
+Step 1: Download file Codeigniter
+Silahkan klik link https://codeigniter.com/ lalu download framework codeigniter terbaru, saat ini yang terbaru adalah versi 3.1.3, dan akan terus berlanjut ke versi berikutnya.
+Step 2: Ekstrak dan Install Codeigniter Framework
+Setelah anda download maka anda akan mendapatkan sebuah file bernama CodeIgniter-3.1.3.zip, silahkan ekstrak file tersebut setelah itu akan muncul folder bernama CodeIgniter-3.1.3, silahkan anda rename menjadi codeigniter lalu salin folder tersebut ke folder root anda, yaitu di htdocs
+Step 3: Konfigurasi Base URL Codeigniter
+Setelah anda selesai melakukan instalasi codeigniter maka selanjutkan melakukan konfigurasi base url yang terdapat di folder application/config/config.php 
+Step 4: Selesai
+Setelah semua sudah dilakukan sesuai dengan instruksi diatas silahkan buka browser dan ketikan url http://localhost/codeigniter
+
+koneksi database
+1. buat terlebih dahulu databasenya di mySQL
+2. lalu untuk menghubungkan codeigniter dengan database buka file config database codeigniter yang terletak di application/config/database.php
+3. lalu pada file config/database.php lakukan pengaturan dengan memasukkan nama hostname, username, password, serta nama database.
+4. setelah pengaturan database selesai selanjutnya memanggil library database codeigniter pada bagian application/config/autoload.php
+$autoload['libraries'] = array();
+diubah jadi
+$autoload['libraries'] = array('database');
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
